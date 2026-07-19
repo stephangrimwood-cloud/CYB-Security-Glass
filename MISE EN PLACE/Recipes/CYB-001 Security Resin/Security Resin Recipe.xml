@@ -1,0 +1,42 @@
+<!--
+==================================================================
+CYB-001 – CYB Security Resin
+
+Type: Recipe
+Status: Production Ready
+
+Source: recipes.xml
+
+Description:
+Defines the Chemistry Station and Campfire recipes used to
+manufacture CYB Security Resin.
+
+Dependencies:
+- cybSecurityResin (Item)
+- localisation.csv
+
+==================================================================
+-->
+
+<recipe name="cybSecurityResin"
+        count="1"
+        craft_area="chemistryStation"
+        tags="perkAdvancedEngineering,chemStationCrafting">
+
+    <ingredient name="resourceBrokenGlass" count="5"/>
+    <ingredient name="resourceGlue" count="1"/>
+    <ingredient name="resourceScrapPolymers" count="3"/>
+
+</recipe>
+
+<recipe name="cybSecurityResin"
+        count="1"
+        craft_area="campfire"
+        craft_tool="toolCookingPot"
+        tags="perkAdvancedEngineering,cookingPotChem">
+
+    <ingredient name="resourceBrokenGlass" count="7"/>
+    <ingredient name="resourceGlue" count="2"/>
+    <ingredient name="resourceScrapPolymers" count="5"/>
+
+</recipe>

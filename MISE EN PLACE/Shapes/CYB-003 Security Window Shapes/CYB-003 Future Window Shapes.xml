@@ -1,0 +1,1647 @@
+ <!-- ====================================================== -->
+        <!-- Future Expansion - Concrete Window Collection           -->
+        <!-- ====================================================== -->
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Circle -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateCircleFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_circle_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateCircleFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateCircleBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,W,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateCircleBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_circle_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateCircleBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateCircleFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square 4 Sided Half Width -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquare4SidedHalfWidthFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_4sided_half_width_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare4SidedHalfWidthFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquare4SidedHalfWidthBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,W,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquare4SidedHalfWidthBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_4sided_half_width_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare4SidedHalfWidthBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquare4SidedHalfWidthFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square Half Left -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquareHalfLeftFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_left_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalfLeftFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,B,N,55,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquareHalfLeftBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="MirrorSibling" value="cybWindowPlateRoundedSquareHalfRightFull" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquareHalfLeftBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_left_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalfLeftBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,B,N,55,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquareHalfLeftFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="MirrorSibling" value="cybWindowPlateRoundedSquareHalfRightBroken" />
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square Half Right -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquareHalfRightFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_right_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalfRightFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,55,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquareHalfRightBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="MirrorSibling" value="cybWindowPlateRoundedSquareHalfLeftFull" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquareHalfRightBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_right_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalfRightBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,55,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquareHalfRightFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="MirrorSibling" value="cybWindowPlateRoundedSquareHalfLeftBroken" />
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square Half Straight -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquareHalfStraightFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_straight_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalfStraightFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquareHalfStraightBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquareHalfStraightBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_straight_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalfStraightBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquareHalfStraightFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square Half 3 Sided -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquareHalf3SidedFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_3sided_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalf3SidedFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,55,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquareHalf3SidedBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquareHalf3SidedBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_half_3sided_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareHalf3SidedBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,55,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquareHalf3SidedFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square 1 Sided -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquare1SidedFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_1sided_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare1SidedFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquare1SidedBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,W,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquare1SidedBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_1sided_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare1SidedBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquare1SidedFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square 2 Sided -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquare2SidedFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_2sided_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare2SidedFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquare2SidedBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquare2SidedBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_2sided_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare2SidedBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquare2SidedFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square 3 Sided -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquare3SidedFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_3sided_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare3SidedFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquare3SidedBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquare3SidedBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_3sided_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare3SidedBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquare3SidedFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square 4 Sided -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquare4SidedFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_4sided_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare4SidedFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquare4SidedBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquare4SidedBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_4sided_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquare4SidedBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquare4SidedFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Rounded Square Corner -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateRoundedSquareCornerFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_corner_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareCornerFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateRoundedSquareCornerBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateRoundedSquareCornerBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_rounded_square_corner_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateRoundedSquareCornerBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="55,B,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateRoundedSquareCornerFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Three Sided Triangle -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateThreeSidedTriangleFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_three_sided_triangle_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateThreeSidedTriangleFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateThreeSidedTriangleBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499998" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowPlateThreeSidedTriangleBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_three_sided_triangle_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateThreeSidedTriangleBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateThreeSidedTriangleFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Two Sided Triangle Left -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateTwoSidedTriangleLeftFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_two_sided_triangle_left_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateTwoSidedTriangleLeftFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateTwoSidedTriangleLeftBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="MirrorSibling" value="cybWindowPlateTwoSidedTriangleRightFull" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499998" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateTwoSidedTriangleLeftBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_two_sided_triangle_left_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateTwoSidedTriangleLeftBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateTwoSidedTriangleLeftFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="MirrorSibling" value="cybWindowPlateTwoSidedTriangleRightBroken" />
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Plate - Two Sided Triangle Right -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowPlateTwoSidedTriangleRightFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_two_sided_triangle_right_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateTwoSidedTriangleRightFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowPlateTwoSidedTriangleRightBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="MirrorSibling" value="cybWindowPlateTwoSidedTriangleLeftFull" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+            <property name="WaterFlow" value="T,B,W,S,E," />
+        </shape>
+
+        <shape name="cybWindowPlateTwoSidedTriangleRightBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_plate_two_sided_triangle_right_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowPlateTwoSidedTriangleRightBroken" />
+            <property name="UseGlobalUV" value=",DDDDDDL" />
+            <property name="ShapeAltTexture" value="T,55,N,W,S,E,702" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="ImposterExclude" value="true" />
+            <property name="ImposterDontBlock" value="true" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowPlateTwoSidedTriangleRightFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+            <property name="MirrorSibling" value="cybWindowPlateTwoSidedTriangleLeftBroken" />
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Circle Center -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowCircleCenterFull" tag="CYBWindows">
+            <property name="Model" value="@:Shapes/window_circle_center_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleCenterFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowCircleCenterBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowCircleCenterBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_circle_center_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleCenterBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowCircleCenterFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+
+        <!-- ========================================================= -->
+        <!-- Arch Window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArchWindowFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_window_full.fbx" />
+            <property name="CustomIcon" value="shapeArchWindowFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GGGLGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybArchWindowBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.5" />
+            <property name="WaterFlow" value="T,N,W,S," />
+        </shape>
+
+        <shape name="cybArchWindowBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_window_broken.fbx" />
+            <property name="CustomIcon" value="shapeArchWindowBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+            <property name="UseGlobalUV" value=",GGGLGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybArchWindowFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="T,N,W,S," />
+        </shape>
+
+
+        <!-- ========================================================= -->
+        <!-- Arch Half Window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArchHalfWindowFull" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_half_window_full.fbx" />
+            <property name="CustomIcon" value="shapeArchHalfWindowFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="UseGlobalUV" value=",GGGLGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybArchHalfWindowBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.7499999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybArchHalfWindowBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_half_window_broken.fbx" />
+            <property name="CustomIcon" value="shapeArchHalfWindowBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+            <property name="UseGlobalUV" value=",GGGLGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybArchHalfWindowFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+
+        <!-- ========================================================= -->
+        <!-- Arch 2m Window 01 - Top -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArch2mWindow01Top" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_2m_window_01_top.fbx" />
+            <property name="CustomIcon" value="shapeArch2mWindow01Top" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GLGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybArch2mWindow01TopBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="B,N,S,E," />
+        </shape>
+
+        <shape name="cybArch2mWindow01TopBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_2m_window_01_top_broken.fbx" />
+            <property name="CustomIcon" value="shapeArch2mWindow01TopBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GLGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybArch2mWindow01Top" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="B,N,S,E," />
+        </shape>
+
+
+        <!-- ========================================================= -->
+        <!-- Arch 2m Window 01 - Center -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArch2mWindow01Center" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_2m_window_01_center.fbx" />
+            <property name="CustomIcon" value="shapeArch2mWindow01Center" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GLGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybArch2mWindow01CenterBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.509" />
+            <property name="WaterFlow" value="B,N,W,S,E," />
+        </shape>
+
+        <shape name="cybArch2mWindow01CenterBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_2m_window_01_center_broken.fbx" />
+            <property name="CustomIcon" value="shapeArch2mWindow01CenterBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GLGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybArch2mWindow01Center" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+
+        <!-- ========================================================= -->
+        <!-- Arch 2m Window 01 - Bottom -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArch2mWindow01Bottom" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_2m_window_01_bottom.fbx" />
+            <property name="CustomIcon" value="shapeArch2mWindow01Bottom" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybArch2mWindow01BottomBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.491" />
+        </shape>
+
+        <shape name="cybArch2mWindow01BottomBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_2m_window_01_bottom_broken.fbx" />
+            <property name="CustomIcon" value="shapeArch2mWindow01BottomBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybArch2mWindow01Bottom" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window 01 -->
+        <!-- Full window with five hidden broken variants -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindow01" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_01.fbx" />
+            <property name="CustomIcon" value="shapeWindow01" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindow01Broken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow01Broken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_01_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindow01Broken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow01" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow01Broken02" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_01_broken02.fbx" />
+            <property name="CustomIcon" value="shapeWindow01Broken02" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow01" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow01Broken03" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_01_broken03.fbx" />
+            <property name="CustomIcon" value="shapeWindow01Broken03" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow01" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow01Broken04" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_01_broken04.fbx" />
+            <property name="CustomIcon" value="shapeWindow01Broken04" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow01" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow01Broken05" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_01_broken05.fbx" />
+            <property name="CustomIcon" value="shapeWindow01Broken05" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGGGGLL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow01" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window 02 -->
+        <!-- Full window with three hidden broken variants -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindow02Full" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window02_full.fbx" />
+            <property name="CustomIcon" value="shapeWindow02Full" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindow02Broken01" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow02Broken01" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window02_broken01.fbx" />
+            <property name="CustomIcon" value="shapeWindow02Broken01" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow02Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow02Broken02" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window02_broken02.fbx" />
+            <property name="CustomIcon" value="shapeWindow02Broken02" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow02Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow02Broken03" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window02_broken03.fbx" />
+            <property name="CustomIcon" value="shapeWindow02Broken03" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow02Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window 04 -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindow04Full" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window04_full.fbx" />
+            <property name="CustomIcon" value="shapeWindow04Full" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindow04Broken01" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindow04Broken01" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window04_broken01.fbx" />
+            <property name="CustomIcon" value="shapeWindow04Broken01" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindow04Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Industrial Window 01 -->
+        <!-- Full window with two hidden broken variants -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowIndustrial01Full" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_industrial_01_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowIndustrial01Full" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowIndustrial01Broken01" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowIndustrial01Broken01" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_industrial_01_broken01.fbx" />
+            <property name="CustomIcon" value="shapeWindowIndustrial01Broken01" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowIndustrial01Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowIndustrial01Broken02" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_industrial_01_broken02.fbx" />
+            <property name="CustomIcon" value="shapeWindowIndustrial01Broken02" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowIndustrial01Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Industrial Window 02 -->
+        <!-- Full window with two hidden broken variants -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowIndustrial02Full" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_industrial_02_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowIndustrial02Full" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowIndustrial02Broken01" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowIndustrial02Broken01" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_industrial_02_broken01.fbx" />
+            <property name="CustomIcon" value="shapeWindowIndustrial02Broken01" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowIndustrial02Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowIndustrial02Broken02" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_industrial_02_broken02.fbx" />
+            <property name="CustomIcon" value="shapeWindowIndustrial02Broken02" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterPlate" />
+            <property name="UseGlobalUV" value=",GGLGGGL" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowIndustrial02Full" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Ramp Window 01 Centered -->
+        <!-- ========================================================= -->
+
+        <shape name="cybRampWindow01Centered" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/ramp_window_01_centered.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeRampWindow01Centered" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+            <property name="UseGlobalUV" value=",GGGLGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybRampWindow01CenteredBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.5" />
+            <property name="WaterFlow" value="B,N,W,S," />
+        </shape>
+
+        <shape name="cybRampWindow01CenteredBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/ramp_window_01_centered_broken.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeRampWindow01CenteredBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,702" />
+            <property name="UseGlobalUV" value=",GGGLGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybRampWindow01Centered" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="B,N,W,S," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Ramp Window -->
+        <!-- Single-stage CYB window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybRampWindow" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/ramp_window.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeRampWindow" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,532,W,S,E" />
+            <property name="UseGlobalUV" value="G,L,G,G,G,G" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.03999994" />
+            <property name="WaterFlow" value="B,N,E," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Ramp Window Centered -->
+        <!-- Single-stage CYB window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybRampWindowCentered" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/ramp_window_centered.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeRampWindowCentered" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,532,W,S,E" />
+            <property name="UseGlobalUV" value="G,L,G,G,G,G" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.4999999" />
+            <property name="WaterFlow" value="B,N,W,E," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Ramp Half Window -->
+        <!-- Single-stage CYB window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybRampHalfWindow" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/ramp_half_window.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeRampHalfWindow" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,532,W,S,E" />
+            <property name="UseGlobalUV" value="G,L,G,G,G,G" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.05199994" />
+            <property name="WaterFlow" value="T,B,N,S,E," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Arch Window -->
+        <!-- Single-stage CYB window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArchWindow" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_window.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeArchWindow" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,532,W,S,E" />
+            <property name="UseGlobalUV" value="G,L,G,G,G,G" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.9629999" />
+            <property name="WaterFlow" value="B,N,W,E," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Arch Window Centered -->
+        <!-- Single-stage CYB window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArchWindowCentered" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_window_centered.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeArchWindowCentered" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,532,W,S,E" />
+            <property name="UseGlobalUV" value="G,L,G,G,G,G" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.4999999" />
+            <property name="WaterFlow" value="B,N,W,E," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Arch Half Window -->
+        <!-- Single-stage CYB window -->
+        <!-- ========================================================= -->
+
+        <shape name="cybArchHalfWindow" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/arch_half_window.fbx" />
+            <property name="Place" value="TowardsPlacerInverted" />
+            <property name="CustomIcon" value="shapeArchHalfWindow" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,532,W,S,E" />
+            <property name="UseGlobalUV" value="G,L,G,G,G,G" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.9529999" />
+            <property name="WaterFlow" value="T,B,N,W,S," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Arch Top Filled Centered Stained -->
+        <!-- Full window with hidden empty-frame downgrade -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowArchTopFilledCenteredStained" tag="CYBWindows">
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_arch_top_filled_centered_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowArchTopFilledCenteredStained" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GGGGGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowArchTopBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.538" />
+            <property name="WaterFlow" value="B,N,S," />
+        </shape>
+
+        <shape name="cybWindowArchTopBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_arch_top.fbx" />
+            <property name="CustomIcon" value="shapeWindowArchTop" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="LightOpacity" value="0" />
+            <property name="UseGlobalUV" value="G,G,G,G,G,G" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowArchTopFilledCenteredStained" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="WaterFlow" value="B,N,S," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Circle -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowCircleFull" tag="CYBWindows">
+            <property name="Model" value="@:Shapes/window_circle_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowCircleBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 1, -1.192093E-07, -0.4999999" />
+            <property name="WaterFlow" value="B,N,W,S,E," />
+        </shape>
+
+        <shape name="cybWindowCircleBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_circle_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowCircleFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterClipPlane" value="0, 1, -1.192093E-07, -0.4999999" />
+            <property name="WaterFlow" value="B,N,W,S,E," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Circle Straight -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowCircleStraightFull" tag="CYBWindows">
+            <property name="Model" value="@:Shapes/window_circle_straight_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleStraightFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowCircleStraightBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.5" />
+            <property name="WaterFlow" value="T,B,N,W,S," />
+        </shape>
+
+        <shape name="cybWindowCircleStraightBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Path" value="solid" />
+            <property name="Model" value="@:Shapes/window_circle_straight_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleStraightBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowCircleStraightFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterClipPlane" value="1, 0, -1.192093E-07, -0.568" />
+            <property name="WaterFlow" value="T,B,N,W,S," />
+        </shape>
+
+        <!-- ========================================================= -->
+        <!-- Window Circle Straight Center -->
+        <!-- ========================================================= -->
+
+        <shape name="cybWindowCircleStraightCenterFull" tag="CYBWindows">
+            <property name="Model" value="@:Shapes/window_circle_straight_center_full.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleStraightCenterFull" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.5" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+            <property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+            <property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+            <property name="DowngradeBlock" value=":cybWindowCircleStraightCenterBroken" />
+            <drop event="Destroy" count="0" />
+            <property name="WaterClipPlane" value="0, 0, 1, -0.4999998" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>
+
+        <shape name="cybWindowCircleStraightCenterBroken" tag="CYBWindows">
+            <property name="ShapeMenu" value="false" />
+            <property name="Model" value="@:Shapes/window_circle_straight_center_broken.fbx" />
+            <property name="CustomIcon" value="shapeWindowCircleStraightCenterBroken" />
+            <property name="ShapeCategories" value="Windows" />
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+            <property name="MaterialHitpointMultiplier" value="0.333" />
+            <property name="ImposterExchange" value="imposterArchWindow" />
+            <property name="ShapeAltTexture" value="T,B,N,W,S,E,596" />
+            <property name="UseGlobalUV" value=",GLGGGGL" />
+
+            <property class="UpgradeBlock">
+                <property name="ToBlock" value=":cybWindowCircleStraightCenterFull" />
+                <property name="Item" value="cybTemperedGlassPanel" />
+                <property name="ItemCount" value="1" />
+                <property name="UpgradeHitCount" value="1" />
+            </property>
+
+            <property name="LightOpacity" value="0" />
+            <property name="WaterFlow" value="permitted" />
+        </shape>

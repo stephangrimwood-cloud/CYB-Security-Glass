@@ -1,0 +1,16 @@
+        <!-- ====================================================== -->
+        <!-- CYB-003 Security Window (VariantHelper)                -->
+        <!-- ====================================================== -->
+
+        <recipe name="cybSecurityWindowShapes:VariantHelper"
+                count="1"
+                craft_area="workbench"
+                craft_time="40"
+                tags="perkAdvancedEngineering">
+
+            <ingredient name="resourceForgedIron" count="10" />
+            <ingredient name="cybTemperedGlassPanel" count="2" />
+            <ingredient name="cybSecurityResin" count="1" />
+            <ingredient name="resourceMechanicalParts" count="4" />
+
+        </recipe>

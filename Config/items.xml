@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+    <append xpath="/items">
+
+        <!-- ================================================== -->
+        <!-- CYB-001 – Security Resin -->
+        <!-- ================================================== -->
+
+        <item name="cybSecurityResin">
+            <property name="HoldType" value="45"/>
+            <property name="Tags" value="junk"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Morganic"/>
+            <property name="Weight" value="10"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="EconomicValue" value="20"/>
+            <property name="Group" value="Resources,Chemicals,CFChemicals"/>
+            <property name="SoundPickup" value="glue_grab"/>
+            <property name="SoundPlace" value="glue_place"/>
+            <property name="CustomIcon" value="cybSecurityResin"/>
+
+            <!-- Intermediate manufacturing component. Not intended for trader sale. -->
+            <property name="SellableToTrader" value="false"/>
+        </item>
+
+        <!-- ================================================== -->
+        <!-- CYB-002 – Tempered Glass Panel -->
+        <!-- ================================================== -->
+        
+        <item name="cybTemperedGlassPanel">
+            <!-- Keeps scrap recovery limited to Broken Glass fragments. -->
+            <property name="Tags" value="junk"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mglass"/>
+            <property name="Weight" value="8"/>
+            <property name="Stacknumber" value="500"/>
+
+            <property name="RepairAmount" value="1000" />
+
+            <!-- Intrinsic value based on approximately 20% reduced manufacturing cost versus vanilla Bulletproof Glass Plate. -->
+            <property name="EconomicValue" value="120"/>
+
+            <!-- Prevents specialist CYB manufacturing components being sold to traders. -->
+            <property name="SellableToTrader" value="false"/>
+
+            <property name="Group" value="Resources"/>
+            <property name="CustomIcon" value="glassCYBTemperedPanel"/>
+        </item>
+
+        <!--  ======================================================  -->
+        <!--  CYB-004 Industrial Toolkit                             -->
+        <!--  ======================================================  -->
+        <!--
+            CYB Industrial Toolkit
+
+            Dedicated maintenance and repair tool for the
+            CYB product range.
+
+            Functional Behaviour
+            ====================
+            * Repairs and upgrades using Nail Gun mechanics.
+            * Consumes the configured repair resources.
+            * Uses the vanilla repair system.
+
+            Presentation
+            ============
+            * Impact Driver model.
+            * Impact Driver animations and handling.
+            * Impact Driver audio where appropriate.
+            * Intended for a future CYB steel-blue appearance.
+
+            Design Principles
+            =================
+            * XML-first implementation.
+            * Vanilla systems wherever possible.
+            * No Harmony or custom DLL requirements.
+            * Designed exclusively for CYB products.
+
+            Economy
+            ========
+            * Crafted by the player.
+            * Not sold by traders.
+            * Cannot be sold to traders.
+            * Intended solely for the installation, maintenance
+            and restoration of CYB products.
+
+            Status
+            ======
+            Development / Research
+        -->
+
+        <item name="cybIndustrialToolkit">
+
+            <!-- Identity -->
+            <property name="Tags" value="tool,repairTool,repairingSkill"/>
+            <property name="DisplayType" value="rangedRepairTool"/>
+            <property name="DescriptionKey" value="cybIndustrialToolkitDesc"/>
+
+            <!-- Presentation -->
+            <property name="HoldType" value="74"/> <!-- REVIEW -->
+            <property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
+            <property name="Material" value="MMotorToolParts"/> <!-- REVIEW -->
+            <property name="TintColor" value="70,115,145"/> <!-- CYB Steel Blue - REVIEW -->
+            <property name="CustomIcon" value="cybIndustrialToolkit"/>
+
+            <!-- Inventory -->
+            <property name="Weight" value="1"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="ScrapTimeOverride" value="10.0"/>
+
+            <!-- Maintenance -->
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="DegradationBreaksAfter" value="false"/>
+
+            <!-- Audio -->
+            <property name="SoundJammed" value="weapon_jam"/>
+            <property name="SoundUnholster" value="weapon_unholster"/>
+            <property name="SoundHolster" value="weapon_holster"/>
+            <property name="SoundPickup" value="impactdriver_grab"/>
+            <property name="SoundPlace" value="impactdriver_place"/>
+
+            <!-- User Interface -->
+            <property name="CrosshairUpAfterShot" value="true"/>
+
+            <!-- Properties -->
+            <property name="SellableToTrader" value="false"/>
+            <property name="ShowQuality" value="true"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="CreativeMode" value="Player"/>
+
+             <!-- Behaviour -->
+            <property class="Action1">
+
+                <property name="Class" value="Repair"/>
+
+                <!-- Impact Driver audio -->
+                <property name="Repair_action_sound" value="impactdriver"/>
+                <property name="Upgrade_action_sound" value="impactdriver"/>
+
+                <!-- Repair behaviour -->
+                <property name="Delay" value=".5"/>
+                <property name="Repair_amount" value="1000"/>
+                <property name="Upgrade_hit_offset" value="-5"/>
+
+                <!-- CYB materials only -->
+                <property name="Allowed_upgrade_items"
+                        value="cybSecurityResin,cybTemperedGlassPanel"/>
+
+                <property name="CanRemoveRequiredResource" value="true"/>
+                <property name="UseAnimStateTrigger" value="true"/>
+
+                <property name="RepairGamepadLabelText" value="lblRepair"/>
+                <property name="UpgradeGamepadLabelText" value="lblUpgrade"/>
+
+                <property name="RepairHitmask_override" value="Melee"/>
+                <property name="Repair_ignore_has_missing_material" value="true"/>
+                <property name="Upgrade_ignore_has_missing_material" value="true"/>
+
+                <property name="RepairDistance" value="4"/>
+                <property name="HoldingItemTransform" value="RightHand"/>
+                <property name="SwapInventorySlots" value="true"/>
+
+            </property>
+
+            <effect_group name="cybIndustrialToolkit">
+
+                <passive_effect name="DegradationMax"
+                                operation="base_set"
+                                value="5000"/>
+
+                <display_value name="dBlockRepairAmount" value="1000"/>               
+
+            </effect_group>
+
+            
+
+            <!-- Progression (Pending Review) -->
+            <!-- UnlockedBy to be determined after reviewing the CYB progression
+                for Security Resin, Tempered Glass Panels and Security Windows. -->
+
+
+
+
+        </item>
+
+    </append>
+
+</configs>
