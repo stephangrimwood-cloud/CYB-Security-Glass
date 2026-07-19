@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+    <append xpath="/materials">
+
+        <!-- ====================================================== -->
+        <!-- CYB-003 Security Window Material V.1                   -->
+        <!-- ====================================================== -->
+        <!--
+            Custom material used by all CYB Security Windows.
+
+            Provides shared durability, audio and structural
+            properties for the complete CYB Security Window
+            Shape Family.
+
+            Runtime durability is calculated by the Shape
+            Controller using:
+
+                Material MaxDamage
+                        ×
+                MaterialHitpointMultiplier
+
+            Individual window shapes define their own
+            MaterialHitpointMultiplier values within
+            shapes.xml.
+        -->
+
+        <material id="McybSecurityWindow">
+
+            <property name="damage_category" value="metal" />
+            <property name="surface_category" value="metal" />
+            <property name="forge_category" value="iron" />
+
+            <property name="Hardness" type="float" value="1" />
+            <property name="stepsound" value="metal" />
+            <property name="stability_glue" value="300" />
+            <property name="Mass" type="int" value="20" />
+            <property name="explosionresistance" value="0.5" />
+
+            <property name="MaxDamage" value="3000" />
+            <property name="Experience" value="2" />
+
+        </material>
+
+    </append>
+
+</configs>
