@@ -1,4 +1,5 @@
-# CYB Security Glass
+![CYB Security Glass](./Documentation/Artwork/banner.png)
+
 
 > Reinforced architectural security windows for **7 Days to Die v3.0 (Build 259)**.
 
@@ -179,3 +180,10 @@ Constructive feedback is always welcome.
 Developed as part of the **CYB Mods** collection.
 
 Special thanks to **The Fun Pimps** for creating *7 Days to Die*, and to the wider modding community whose shared knowledge, experimentation and collaboration continue to make projects like this possible.
+
+---
+
+Beautiful Windows.
+Serious Protection.
+
+VERSION 1.0.0
