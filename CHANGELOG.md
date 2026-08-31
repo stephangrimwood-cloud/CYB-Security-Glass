@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2026-08-31
+
+### Fixed
+
+\- Removed the unintended quality-tier indicator from the CYB Industrial Toolkit.
+
+\- Toolkit durability and repair functionality remain unchanged.
+
 ## [1.0.0] - 2026-07-18
 
 ### Added

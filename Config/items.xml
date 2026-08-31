@@ -129,7 +129,7 @@
 
             <!-- Properties -->
             <property name="SellableToTrader" value="false"/>
-            <property name="ShowQuality" value="true"/>
+            <property name="ShowQuality" value="false"/>
             <property name="Group" value="Tools/Traps"/>
             <property name="CreativeMode" value="Player"/>
 
